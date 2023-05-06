@@ -1,0 +1,92 @@
+*,
+*:before *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  --light: rgb(205, 205, 205);
+  --medium: rgb(197, 197, 197);
+  --dark: grey;
+}
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 1em;
+  }
+}
+
+body {
+  border: 5px solid var(--medium);
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.karli-image {
+  margin: 0%;
+  max-width: 100px;
+  height: 80px;
+  border-radius: 100%;
+  padding: 0px 5px;
+}
+
+.header article {
+  display: flex;
+  align-items: center;
+}
+
+.header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.header .heading {
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: var(--light);
+  font-weight: bold;
+}
+
+.divider {
+  border-top: 2px solid var(--medium);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.name {
+  display: grid;
+  align-items: center;
+  font-size: medium;
+}
+
+.time {
+  font-size: 12px;
+  color: var(--dark);
+}
+
+.punkt {
+  position: relative;
+  left: 50%;
+}
